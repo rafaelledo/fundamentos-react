@@ -1,4 +1,4 @@
-export default function First() {
+export default () => {
   const msg = 'Seja bem-vindo!'
   return (
     <div>

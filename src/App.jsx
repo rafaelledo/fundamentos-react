@@ -4,7 +4,7 @@ import First from './components/basics/First'
 import WithParameter from './components/basics/WithParameter'
 import Fragment from './components/basics/Fragment'
 
-export default (props) => (
+export default props => (
   <div id="app">
     <h1>Fundamentos React</h1>
     <Fragment />

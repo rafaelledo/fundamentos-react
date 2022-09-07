@@ -1,4 +1,4 @@
-export default function (props) {
+export default props => {
   const status = props.nota >= 7 ? 'Aprovado' : 'Recuperação'
   return (
     <div>
