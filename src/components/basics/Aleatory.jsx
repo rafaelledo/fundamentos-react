@@ -1,7 +1,12 @@
 export default (props) => {
-  const factor = props.max - props.min + 1
-  const random = parseInt(Math.random() * factor) + props.min
+  const { min, max } = props
+  const sortedNumber = parseInt(Math.random() * (max - min) + 1) + min
   return (
-    <h1>{random}</h1>
+    <div>
+      <h1>Aleatory Number</h1>
+      <p><strong>Minimum number:</strong>{min}</p>
+      <p><strong>Maximum number:</strong>{max}</p>
+      <p><strong>Sorted number:</strong>{sortedNumber}</p>
+    </div>
   )
 }
