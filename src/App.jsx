@@ -1,6 +1,7 @@
 import React from 'react'
 import App from './App.css'
 
+import ParentDirect from './components/communication/ParentDirect'
 import UserInfo from './components/conditional/UserInfo'
 import EvenOrOdd from './components/conditional/EvenOrOdd'
 import ProductsTable from './components/repetition/ProductsTable'
@@ -18,6 +19,10 @@ export default props => (
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+      <Card titulo="#09 - Comunicação Direta" color="#E3C770">
+        <ParentDirect></ParentDirect>
+      </Card>
+
       <Card titulo="#08 - Renderização Condicional" color="#367E18">
         <EvenOrOdd number="2"></EvenOrOdd>
         <UserInfo user={{name: 'Fernando'}}></UserInfo>
