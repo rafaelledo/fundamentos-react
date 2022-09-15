@@ -1,6 +1,12 @@
 import React from 'react'
 import App from './App.css'
 
+import UserInfo from './components/conditional/UserInfo'
+import EvenOrOdd from './components/conditional/EvenOrOdd'
+import ProductsTable from './components/repetition/ProductsTable'
+import StudentList from './components/repetition/StudentList'
+import Family from './components/basics/Family'
+import FamilyMember from './components/basics/FamilyMember'
 import Card from './components/layout/Card'
 import First from './components/basics/First'
 import WithParameter from './components/basics/WithParameter'
@@ -12,15 +18,37 @@ export default props => (
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
-      <Card titulo="#04 - Desafio Aleatório">
+      <Card titulo="#08 - Renderização Condicional" color="#367E18">
+        <EvenOrOdd number="2"></EvenOrOdd>
+        <UserInfo user={{name: 'Fernando'}}></UserInfo>
+        <UserInfo user={{email: 'fernando@gmail.com'}}></UserInfo>
+      </Card>
+
+      <Card titulo="#07 - Desafio Repetição" color="#C98474">
+        <ProductsTable></ProductsTable>
+      </Card>
+
+      <Card titulo="#06 - Repetição" color="#fb8500">
+        <StudentList></StudentList>
+      </Card>
+
+      <Card titulo="#05 - Componente com Filhos" color="#1d3557">
+        <Family sobrenome="Ferreira">
+          <FamilyMember nome="Pedro" />
+          <FamilyMember nome="Ana" />
+          <FamilyMember nome="Gustavo" />
+        </Family>
+      </Card>
+
+      <Card titulo="#04 - Desafio Aleatório" color="#009933">
         <Aleatory min={1} max={60} />
       </Card>
 
-      <Card titulo="#03 - Fragmento">
+      <Card titulo="#03 - Fragmento" color="#8000ff">
         <Fragment />
       </Card>
 
-      <Card titulo="#02 - Com parâmetro">
+      <Card titulo="#02 - Com parâmetro" color="#cc0066">
         <WithParameter
           titulo="Situação do Aluno"
           aluno="Pedro"
@@ -28,7 +56,7 @@ export default props => (
         />
       </Card>
 
-      <Card titulo="#01 - Primeiro Componente">
+      <Card titulo="#01 - Primeiro Componente" color="#ee9b00">
         <First />
       </Card>
     </div>
