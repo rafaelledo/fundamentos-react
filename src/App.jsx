@@ -21,7 +21,7 @@ export default props => (
       <Card titulo="#08 - Renderização Condicional" color="#367E18">
         <EvenOrOdd number="2"></EvenOrOdd>
         <UserInfo user={{name: 'Fernando'}}></UserInfo>
-        <UserInfo user={{email: 'fernando@gmail.com'}}></UserInfo>
+        {/* <UserInfo user={{email: 'fernando@gmail.com'}}></UserInfo> */}
       </Card>
 
       <Card titulo="#07 - Desafio Repetição" color="#C98474">
