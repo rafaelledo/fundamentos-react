@@ -1,6 +1,7 @@
 import React from 'react'
 import App from './App.css'
 
+import Input from './components/form/Input'
 import IndirectChild from './components/communication/IndirectChild'
 import IndirectParent from './components/communication/IndirectParent'
 import ParentDirect from './components/communication/ParentDirect'
@@ -21,6 +22,10 @@ export default props => (
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+      <Card titulo="#11 - Componente Controlado (Input)" color="#6FEDD6">
+        <Input></Input>
+      </Card>
+
       <Card titulo="#10 - Comunicação Indireta" color="#472D2D">
         <IndirectParent></IndirectParent>
       </Card>
