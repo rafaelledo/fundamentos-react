@@ -1,6 +1,7 @@
 import React from 'react'
 import App from './App.css'
 
+import Mega from './components/mega/Mega'
 import Counter from './components/counter/Counter'
 import Input from './components/form/Input'
 import IndirectParent from './components/communication/IndirectParent'
@@ -22,6 +23,10 @@ export default props => (
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+      <Card titulo="#13 - Mega" color="#293462">
+        <Mega qty={8}></Mega>
+      </Card>
+
       <Card titulo="#12 - Contador" color="#2A0944">
         <Counter initialNumber={10} ></Counter>
       </Card>
@@ -40,7 +45,7 @@ export default props => (
 
       <Card titulo="#08 - Renderização Condicional" color="#367E18">
         <EvenOrOdd number="2"></EvenOrOdd>
-        <UserInfo user={{name: 'Fernando'}}></UserInfo>
+        <UserInfo user={{ name: 'Fernando' }}></UserInfo>
         {/* <UserInfo user={{email: 'fernando@gmail.com'}}></UserInfo> */}
       </Card>
 
